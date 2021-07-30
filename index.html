@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="quiz.js"></script> -->
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="hide-show">
+
+        <label for="difficulty">Select Difficulty</label>
+        <select name="difficulty" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <label for="category">Select Category</label>
+        <select name="category" id="category">
+            <option value="18">Computer Science</option>
+            <option value="9">General Knowledge</option>
+            <option value="17">Science And Nature</option>
+            <option value="22">Geography</option>
+        </select>
+        <!-- <button onclick="startQuiz()">Start Quiz</button> -->
+        <a href="javascript:void(0)" onclick="startQuiz()">Start Quiz</a>
+    </div>
+
+    <div id="container" class="mainContainer">
+        <div id="question"></div>
+        <div class="opContainer">
+            <a href="javascript:void(0)" id="op1" class="options" onclick="optOne()"></a>
+            <a href="javascript:void(0)" id="op2" class="options" onclick="optTwo()"></a>
+            <a href="javascript:void(0)" id="op3" class="options" onclick="optThree()"></a>
+            <a href="javascript:void(0)" id="op4" class="options" onclick="optFour()"></a>
+            
+            <!-- <div id="op1" class="options"></div> -->
+            <!-- <div id="op2" class="options"></div> -->
+            <!-- <div id="op3" class="options"></div> -->
+            <!-- <div id="op4" class="options"></div> -->
+        </div>
+            <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="score"></div>
+</body>
+
+</html>
